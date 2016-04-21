@@ -11,7 +11,7 @@ module AjaxDatatablesRails
       end
 
       def query sort_column
-        "#{ sort_column } #{ dir }"
+        "#{ sort_column } #{ dir } NULLS LAST"
       end
 
       def column
